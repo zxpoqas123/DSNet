@@ -12,8 +12,6 @@ from torchaudio import functional as audioF
 from torch.nn.utils.rnn import pad_sequence, pack_padded_sequence, pad_packed_sequence
 from torch.autograd import Function
 from collections import OrderedDict
-#from modules.transformer import TransformerEncoder
-from modules.transformer import TransformerEncoder,TransformerEncoderLayer
 
 class FocalLoss(nn.Module):
     def __init__(self, alpha = 0.25, gamma = 2, weight = None, reduction = 'mean'):
